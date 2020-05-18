@@ -1,0 +1,234 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* COMMON */
+.header {
+  margin: 1rem 0;
+}
+
+.header .system-logo img {
+}
+
+.header .section-title h1 {
+  font-size: 3rem;
+}
+
+.navbar-main {
+  background-color: #e9ecef;
+}
+
+.navbar-main .navbar-user-info span {
+  margin-left: 1rem;
+}
+
+.navbar-dispatcher .container {
+  justify-content: flex-end;
+}
+
+.content {
+  padding: 2rem 0;
+}
+
+.footer {
+  padding: 1rem 0;
+  background-color: #e9ecef;
+}
+
+/* LIST DISPATCHER PAGE */
+.filter-item {
+  max-height: 230px;
+  overflow-y: scroll;
+  margin-bottom: 1rem;
+}
+
+.filter-item .title {
+  font-weight: bold;
+}
+
+.filter-item .form-group {
+  margin-bottom: 0.15rem;
+}
+
+.filters-list .form-group .btn-submit {
+  width: 100%;
+}
+
+.create-incident button {
+  width: 100%;
+}
+
+.table-wrapper {
+  max-width: 100%;
+  overflow-x: scroll;
+  margin-bottom: 1rem;
+}
+
+.table-incidents {
+}
+
+.table-incidents tbody th,
+.table-incidents tbody td {
+  min-width: 150px;
+}
+
+.table-incidents th a {
+  color: inherit;
+}
+
+/* LIST ADMIN PAGE */
+.navbar-admin {
+}
+
+.navbar-admin .container {
+  justify-content: space-between;
+}
+
+.navbar-admin .navbar-admin-info {
+  position: relative;
+}
+
+.navbar-admin .navbar-admin-info i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.navbar-admin .navbar-admin-menu {
+  background: #e9ecef;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  z-index: 99;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 12rem;
+}
+
+.navbar-admin .navbar-admin-menu.hidden {
+  display: none;
+}
+
+.navbar-admin .navbar-admin-menu i {
+  font-size: 1rem;
+  width: 1.5rem;
+  text-align: center;
+  margin-right: 0.5rem;
+  cursor: auto;
+}
+
+.navbar-admin .navbar-admin-menu a {
+  color: inherit;
+}
+
+/* SINGLE INCIDENT PAGE */
+.single-incident .row {
+  margin-bottom: 1rem;
+}
+
+.single-incident .row:last-child {
+  margin-bottom: 0;
+}
+
+.single-incident span {
+  font-weight: bold;
+}
+
+.single-incident .status input[type="radio"],
+.single-incident .status button {
+  margin-left: 2rem;
+}
+
+.single-incident .status .radio-buttons {
+  line-height: 2rem;
+}
+
+.single-incident .card {
+  margin-top: 2rem;
+}
+
+.single-incident .card-header {
+  font-weight: bold;
+}
+
+.single-incident .card-body label {
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.single-incident .card-body .radio-buttons {
+  margin-top: 0.5rem;
+}
+
+.single-incident .card-body input[type="radio"] {
+  margin-left: 2rem;
+}
+
+.single-incident .card-body input[type="radio"]:first-child {
+  margin-left: 0;
+}
+
+.single-incident .card-body textarea {
+  resize: none;
+}
+
+.single-incident .card-body .delete-link {
+  color: red;
+}
+
+.modal label {
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.alarm__btn {
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+  width: 100%;
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+}
+
+.alarm {
+  max-width: 25px;
+  margin-right: 30px;
+}
+
+.timer {
+  margin-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+/* PROFILE PAGE */
+.profile-form label {
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+/* AUTH PAGE */
+.auth-page .container {
+  align-items: center;
+}
+
+.auth-page .auth-title {
+  margin-bottom: 5rem;
+}
+
+.auth-page .auth-form {
+  justify-content: center;
+}
+
+.auth-page .auth-form form {
+  background-color: #e9ecef;
+  padding: 2rem;
+  border-radius: 5%;
+}
+
+.auth-page .auth-form form h1,
+.auth-page .auth-form form img {
+  margin-bottom: 2rem;
+}

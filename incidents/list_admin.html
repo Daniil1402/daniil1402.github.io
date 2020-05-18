@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Архив инцидентов</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 system-logo">
+            <img src="img/logo.png" alt="" />
+          </div>
+
+          <div class="col-9 d-flex align-items-center justify-content-center system-title">
+            <h1 class="align-bottom">Архив инцидентов</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-main navbar-admin">
+      <div class="container">
+        <div class="navbar-admin-info">
+          <i id="navbar-admin-toggler" class="fa fa-bars" aria-hidden="true"></i>
+
+          <div id="navbar-admin-menu" class="navbar-admin-menu hidden">
+            <div><i class="fa fa-calendar-check-o" aria-hidden="true"></i> <a href="javascript:void(0)">Календарь</a></div>
+            <div><i class="fa fa-home" aria-hidden="true"></i> <a href="javascript:void(0)">Больницы</a></div>
+            <div><i class="fa fa-address-card-o" aria-hidden="true"></i> <a href="javascript:void(0)">Врачи</a></div>
+            <div><i class="fa fa-meh-o" aria-hidden="true"></i> <a href="javascript:void(0)">Пациенты</a></div>
+            <div><i class="fa fa-user" aria-hidden="true"></i> <a href="javascript:void(0)">Пользователи</a></div>
+            <div><i class="fa fa-bar-chart" aria-hidden="true"></i> <a href="javascript:void(0)">Статистика</a></div>
+          </div>
+        </div>
+
+        <div class="navbar-user-info">
+          <img src="https://via.placeholder.com/50" class="rounded-circle" alt="" />
+          <span class="navbar-text">
+            Иван Петров
+          </span>
+          <span class="navbar-text">
+            <a href="auth.html">Выйти</a>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <!-- FILTERS OF INCIDENTS -->
+          <div class="col-2">
+            <h3>Фильтры</h3>
+
+            <form action="" class="filters-list">
+              <div class="filter-item">
+                <div class="title">Больницы</div>
+                <div class="form-group"><input type="checkbox" /> Сертолово</div>
+                <div class="form-group"><input type="checkbox" /> Гатчина</div>
+                <div class="form-group"><input type="checkbox" /> Токсово</div>
+                <div class="form-group"><input type="checkbox" /> Дибуны</div>
+                <div class="form-group"><input type="checkbox" /> Левашово</div>
+                <div class="form-group"><input type="checkbox" /> Всеволожск</div>
+                <div class="form-group"><input type="checkbox" /> Пушкин</div>
+                <div class="form-group"><input type="checkbox" /> Петергоф</div>
+                <div class="form-group"><input type="checkbox" /> Ломоносов</div>
+                <div class="form-group"><input type="checkbox" /> Коммунары</div>
+              </div>
+
+              <div class="filter-item">
+                <div class="title">Больницы</div>
+                <div class="form-group"><input type="checkbox" /> Иванов</div>
+                <div class="form-group"><input type="checkbox" /> Петров</div>
+                <div class="form-group"><input type="checkbox" /> Сидоров</div>
+                <div class="form-group"><input type="checkbox" /> Ильин</div>
+                <div class="form-group"><input type="checkbox" /> Максимов</div>
+                <div class="form-group"><input type="checkbox" /> Андреев</div>
+                <div class="form-group"><input type="checkbox" /> Фролов</div>
+                <div class="form-group"><input type="checkbox" /> Васильев</div>
+                <div class="form-group"><input type="checkbox" /> Булычев</div>
+                <div class="form-group"><input type="checkbox" /> Кулик</div>
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-submit">Поиск</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- LIST OF INCIDENTS -->
+          <div class="col-10">
+            <!-- SEARCH INCIDENT, CREAT INCIDENT -->
+            <div class="row search-and-create">
+              <div class="col-9 search-incident">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Найти инцидент" />
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-search" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-3 create-incident">
+                <button type="button" class="btn btn-secondary"><i class="fa fa-plus" aria-hidden="true"></i> Создать</button>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <div class="table-wrapper">
+                  <table class="table table-incidents">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">
+                          Дата <a href="javascript:void(0)"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        </th>
+                        <th scope="col">
+                          Пациент <a href="javascript:void(0)"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        </th>
+                        <th scope="col">
+                          Больница <a href="javascript:void(0)"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        </th>
+                        <th scope="col">
+                          Врач <a href="javascript:void(0)"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        </th>
+                        <th scope="col">
+                          Инфо 1<a href="javascript:void(0)"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        </th>
+                        <th scope="col">
+                          Инфо 2<a href="javascript:void(0)"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        </th>
+                        <th scope="col">
+                          Инфо 3<a href="javascript:void(0)"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        </th>
+                        <th scope="col">
+                          Инфо 4<a href="javascript:void(0)"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">25.11.2019</th>
+                        <td>Харломов И.И.</td>
+                        <td>Дибуны</td>
+                        <td>Васильев Б.А.</td>
+                        <td>Доп. информация 1</td>
+                        <td>Доп. информация 2</td>
+                        <td>Доп. информация 3</td>
+                        <td>Доп. информация 4</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">25.11.2019</th>
+                        <td>Меркулов М.В.</td>
+                        <td>Дибуны</td>
+                        <td>Петров И.И.</td>
+                        <td>Доп. информация 1</td>
+                        <td>Доп. информация 2</td>
+                        <td>Доп. информация 3</td>
+                        <td>Доп. информация 4</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">24.11.2019</th>
+                        <td>Сергеева Е.П.</td>
+                        <td>Токсово</td>
+                        <td>Сидоров Н.Н.</td>
+                        <td>Доп. информация 1</td>
+                        <td>Доп. информация 2</td>
+                        <td>Доп. информация 3</td>
+                        <td>Доп. информация 4</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">25.11.2019</th>
+                        <td>Харломов И.И.</td>
+                        <td>Дибуны</td>
+                        <td>Васильев Б.А.</td>
+                        <td>Доп. информация 1</td>
+                        <td>Доп. информация 2</td>
+                        <td>Доп. информация 3</td>
+                        <td>Доп. информация 4</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">25.11.2019</th>
+                        <td>Меркулов М.В.</td>
+                        <td>Дибуны</td>
+                        <td>Петров И.И.</td>
+                        <td>Доп. информация 1</td>
+                        <td>Доп. информация 2</td>
+                        <td>Доп. информация 3</td>
+                        <td>Доп. информация 4</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">24.11.2019</th>
+                        <td>Сергеева Е.П.</td>
+                        <td>Токсово</td>
+                        <td>Сидоров Н.Н.</td>
+                        <td>Доп. информация 1</td>
+                        <td>Доп. информация 2</td>
+                        <td>Доп. информация 3</td>
+                        <td>Доп. информация 4</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">25.11.2019</th>
+                        <td>Харломов И.И.</td>
+                        <td>Дибуны</td>
+                        <td>Васильев Б.А.</td>
+                        <td>Доп. информация 1</td>
+                        <td>Доп. информация 2</td>
+                        <td>Доп. информация 3</td>
+                        <td>Доп. информация 4</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">25.11.2019</th>
+                        <td>Меркулов М.В.</td>
+                        <td>Дибуны</td>
+                        <td>Петров И.И.</td>
+                        <td>Доп. информация 1</td>
+                        <td>Доп. информация 2</td>
+                        <td>Доп. информация 3</td>
+                        <td>Доп. информация 4</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">24.11.2019</th>
+                        <td>Сергеева Е.П.</td>
+                        <td>Токсово</td>
+                        <td>Сидоров Н.Н.</td>
+                        <td>Доп. информация 1</td>
+                        <td>Доп. информация 2</td>
+                        <td>Доп. информация 3</td>
+                        <td>Доп. информация 4</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">25.11.2019</th>
+                        <td>Харломов И.И.</td>
+                        <td>Дибуны</td>
+                        <td>Васильев Б.А.</td>
+                        <td>Доп. информация 1</td>
+                        <td>Доп. информация 2</td>
+                        <td>Доп. информация 3</td>
+                        <td>Доп. информация 4</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- PAGINATION AND SELECT INCIDENTS -->
+            <div class="row">
+              <div class="col-10">
+                <nav>
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link">Назад</a></li>
+                    <li class="page-item"><a class="page-link">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Вперед</a></li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div class="col-2">
+                <form action="">
+                  <select class="form-control" name="" id="">
+                    <option value="10">10</option>
+                    <option value="10">20</option>
+                    <option value="10">50</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="container">
+        <div class="row d-flex justify-content-end">
+          <div class="col-3 text-right">
+            MedChat
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
