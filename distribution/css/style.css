@@ -136,7 +136,7 @@
 .modal__title {
   color: #0199d6;
   font-family: "hnc-black";
-  font-size: 35px;
+  font-size: 25px;
   line-height: 45px;
 }
 
@@ -182,4 +182,7 @@
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
+.modal__text {
+  font-size: 20px;
+}
 /*# sourceMappingURL=style.css.map */
