@@ -1,0 +1,162 @@
+header
+    padding-bottom: 70px
+.headerTop   
+    display: flex
+    justify-content: space-between
+    nav
+        display: flex
+        justify-content: space-between
+        padding: 30px 0
+        border-bottom: 1px solid #000
+        width: 100%
+        a 
+            text-decoration: none
+            color: #828282
+            font-size: 18px
+            line-height: 22px
+            font-weight: bold
+            transition: 0.3s
+            &:hover
+                color: #000
+                transition: 0.3s
+    #menu 
+        padding: 0
+        border: none
+        font: inherit
+        color: inherit
+        background-color: transparent
+        cursor: pointer
+        //width: 40px
+        display: none
+        img 
+            filter: invert(0)
+            transition: .3s
+            &:hover
+                filter: invert(50%)
+                transition: .3s
+        .close-menu
+            display: none
+
+.headerMain
+    .headerMain__top
+        padding:
+            top: 40px
+            bottom: 50px
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        position: relative
+        h1          
+            font-size: 50px
+            line-height: 60px
+        p 
+            font-size: 18px
+            line-height: 22px
+        .lang
+            position: relative
+            right: 0
+            bottom: 0
+            transform: rotate(-90deg) translate(35%, 135%)
+            a 
+                text-decoration: none
+                font-size: 15px
+                line-height: 20px
+                font-weight: bold
+            .lang__link
+                margin-right: 5px
+                &::after
+                    content: "|"
+                    top: 
+                    left: 
+                    padding-left: 5px
+    .headerMain__bottom
+        max-width: 1040px
+        width: 100%
+        img 
+            width: 100%
+            height: 100%
+
+@media screen and (max-width: 1024px)
+    .headerTop
+        position: relative
+        // order: 1
+        z-index: 100
+        nav
+            position: fixed
+            display: flex
+            // top: 0
+            // right: 0
+            z-index: 101
+            width: 100%
+            height: 100vh
+            max-height: 0%
+            overflow: hidden
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            background: rgba(255, 255, 255, 0.3)
+            transition: 1s
+            padding: 0
+            border-bottom: none
+            &.active
+                max-height: 100%
+                background: rgba(255, 255, 255, 0.9)
+                transition: 1s
+            a
+                display: block
+                &:not(:last-child)
+                    margin-right: 0
+                    margin-bottom: 10px
+        #menu
+            display: block
+            position: absolute  
+            z-index: 102
+            top: 55px
+            right: 30px
+            //position: fixed              
+            &.active
+                .hamburger-menu 
+                    display: none 
+                .close-menu
+                    display: inline-block
+    .headerMain
+        .headerMain__top
+            // padding:
+            //     top: 40px
+            //     bottom: 50px
+            // display: flex
+            justify-content: space-around
+            // align-items: flex-end
+            // position: relative
+            .lang
+                position: absolute
+                // right: 0
+                // bottom: 0
+                // transform: rotate(-90deg) translate(35%, 135%)
+                display: none
+                &.active
+                    display: block
+                    right: 20px
+                    bottom: -80px
+                    transform: rotate(-90deg) translate(35%, 135%)
+                    z-index: 150
+
+@media screen and (max-width: 550px)
+    .headerMain
+        .headerMain__top
+            // padding:
+            //     top: 40px
+            //     bottom: 50px
+            flex-direction: column
+            align-items: flex-start
+            margin-left: 30px
+            h1 
+                margin-bottom: 20px
+
+@media screen and (max-width: 550px)
+    .headerMain
+        .headerMain__top
+            h1 
+                font-size: 40px
+                line-height: 50px
+    

@@ -1,0 +1,25 @@
+mixin header()
+    header
+        .headerTop
+            nav.headerTop__nav
+                a(href="#") Home
+                a(href="#about") About me
+                a(href="#education") Education
+                a(href="#portfolio") Portfolio
+                a(href="#contacts") Contacts
+            button(type="button" id="menu")
+                img(src="assets/img/icon/menu.svg", class="hamburger-menu", alt="menu")
+                img(src="assets/img/icon/close.svg", class="close-menu", alt="menu")
+        .headerMain
+            .headerMain__top
+                h1 Yakovlev <br> Daniil
+                p. 
+                    frontend developer
+                    <br>
+                    23 years old, Saint-Petersburg 
+                .lang
+                    a(href="#").lang__link RU
+                    a(href="#") ENG
+            .headerMain__bottom
+                img(src="assets/img/King.jpg", alt="")
+        

@@ -1,0 +1,75 @@
+footer
+    text-align: center
+    padding: 
+        top: 115px
+        bottom: 120px
+    .footer__top
+        margin-bottom: 85px
+        display: flex
+        flex-direction: column
+        // justify-content: center
+        h2 
+            font-size: 34px
+            line-height: 42px
+            color: #070707
+            margin-bottom: 20px
+        span 
+            font-size: 18px
+            line-height: 22px
+            display: inline-block
+            margin-bottom: 30px
+        a
+            background: #000000
+            color: #ffffff
+            text-decoration: none
+            padding: 10px 30px
+            border-radius: 30px
+            max-width: 180px
+            display: inline-block
+            margin: 0 auto
+            transition: .2s
+            &:hover
+                opacity: 0.6
+                transition: .2s
+    .footer__bottom
+        .social
+            //margin-bottom: 40px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            flex-wrap: wrap
+            max-width: 450px
+            width: 100%
+            margin: 0 auto 40px
+            padding: 0 20px
+            a 
+                transition: .2s
+                // &:not(:last-child)
+                //     margin-right: 60px
+                &:hover
+                    opacity: 0.3
+                    transition: .2s
+                img 
+                    width: 40px
+
+@media screen and (max-width: 768px)
+    footer
+        padding: 
+            top: 65px
+            bottom: 70px
+
+// @media screen and (max-width: 500px)
+//     footer
+//         .footer__bottom
+//             .social
+//                 a 
+//                     &:not(:last-child)
+//                         margin-right: 40px
+
+// @media screen and (max-width: 375px)
+//     footer
+//         .footer__bottom
+//             .social
+//                 a 
+//                     &:not(:last-child)
+//                         margin-right: 50px

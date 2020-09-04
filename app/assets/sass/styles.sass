@@ -1,0 +1,26 @@
+@import fonts
+@import libs
+
+*, *::before, *::after
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: Montserrat-Regular, sans-serif
+
+.container
+  max-width: 1040px
+  width: 100%
+  margin: 0 auto
+
+a, button, form, textarea
+  &:active, &:focus
+    box-shadow: none
+    outline: none  
+
+@import components/header
+@import components/about
+@import components/education
+@import components/portfolio
+@import components/footer
