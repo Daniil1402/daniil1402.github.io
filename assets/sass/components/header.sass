@@ -62,6 +62,11 @@ header
                 font-size: 15px
                 line-height: 20px
                 font-weight: bold
+                color: #000
+                transition: .3s
+                &:hover
+                    color:#828282
+                    transition: .3s
             .lang__link
                 margin-right: 5px
                 &::after
@@ -100,13 +105,15 @@ header
             border-bottom: none
             &.active
                 max-height: 100%
-                background: rgba(255, 255, 255, 0.9)
+                background: rgba(255, 255, 255, 1)
                 transition: 1s
             a
                 display: block
+                color: #828282
+                font-size: 30px
                 &:not(:last-child)
                     margin-right: 0
-                    margin-bottom: 10px
+                    margin-bottom: 30px
         #menu
             display: block
             position: absolute  
@@ -130,16 +137,14 @@ header
             // position: relative
             .lang
                 position: absolute
-                // right: 0
-                // bottom: 0
-                // transform: rotate(-90deg) translate(35%, 135%)
+                right: 20px
+                bottom: -80px
                 display: none
                 &.active
                     display: block
-                    right: 20px
-                    bottom: -80px
                     transform: rotate(-90deg) translate(35%, 135%)
                     z-index: 150
+                    max-height: 100%
 
 @media screen and (max-width: 550px)
     .headerMain

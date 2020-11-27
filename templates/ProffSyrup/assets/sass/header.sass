@@ -1,0 +1,49 @@
+header
+    padding-top: 10px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    overflow: hidden
+    position: sticky
+    top: 0
+    background-color: #111111
+
+.header__left
+    display: flex
+    align-items: center
+    font-family: "Qanelas-Medium"
+    font-size: 20px
+
+.info
+    display: flex
+    flex-direction: column
+    margin-left: 20px
+    a 
+        text-decoration: none
+        color: #FFFFFF
+        &:first-child
+            color: #C19A78
+        &:hover
+            color: #443b32
+        
+
+.header__right
+    nav
+        a
+            color: #FFFFFF
+            text-decoration: none
+            margin-left: 40px
+            font-size: 20px
+            font-family: "Qanelas-SemiBold"
+            background-image: linear-gradient(#C19A78, #C19A78)
+            background-position: 0% 100%
+            background-repeat: no-repeat
+            background-size: 0% 2px
+            transition: background-size .3s
+            &:hover
+                background-size: 100% 2px
+            &:active
+              color: #C19A78  
+            // &:focus
+            //     color: #C19A78  
+            //     border-bottom: 2px solid#C19A78  

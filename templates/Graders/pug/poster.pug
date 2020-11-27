@@ -1,0 +1,78 @@
+extends layout
+
+block content
+    header.header(style="background-image: url(./assets/img/posterbg.png);")
+        .container
+            .headerTop.mb-300
+                .headerTop__logo
+                    a(href="index.html") GRADERS
+                .headerTop__nav
+                    nav#headerNav
+                        a(href="poster.html") АФИША
+                        a(href="blog.html") БЛОГ
+                        a(href="gallery-list.html") ФОТО
+                        a(href="video.html") ВИДЕО
+                        a(href="merch.html") МЕРЧ
+                        a(href="about.html") О НАС
+                    button(type="button" id="menu")
+                        img(src="assets/img/hamburger-menu.png", class="hamburger-menu", alt="menu")
+                        img(src="assets/img/close-menu.png", class="close-menu", alt="menu")
+                .headerTop__contacts
+                    .headerTop__social
+                        a(href="https://www.instagram.com/_graders_")
+                            img(src="assets/img/instagram.png", alt="instagram")
+                        a(href="https://vk.com/graders_band")
+                            img(src="assets/img/vk.png", alt="vkontakte")
+                        a(href="https://www.youtube.com/channel/UCoLkkYyPvv1I2k5fNXfnRfQ")
+                            img(src="assets/img/youtube.png", alt="youtube")
+                    button(type="button" id="button")
+                        img(src="assets/img/share.png", alt="")
+                        img(src="assets/img/angle.png", alt="" class="img__btn")
+            .headerMiddle.mb-600.color-white.ml-30
+                p(style="opacity: 100%;") АФИША
+    .container
+        .poster
+            .posterItem
+                .posterItem__Date
+                    span.posterItem__date 15
+                    span.posterItem__month ОКТЯБРЯ
+                .posterItem__main
+                    .posterItem__left
+                        span.posterItem__title Hard Rock Cafe
+                        span.posterItem__info Садовая, 62
+                        span.posterItem__time 20:00
+                    .posterItem__right
+                        a(href="#") АНОНС
+            .posterItem
+                .posterItem__Date
+                    span.posterItem__date 30
+                    span.posterItem__month ОКТЯБРЯ
+                .posterItem__main
+                    .posterItem__left
+                        span.posterItem__title Liverpool Bar
+                        span.posterItem__info Маяковского, 16
+                        span.posterItem__time 20:30
+                    .posterItem__right
+                        a(href="#") АНОНС
+            .posterItem
+                .posterItem__Date
+                    span.posterItem__date 9
+                    span.posterItem__month НОЯБРЯ
+                .posterItem__main
+                    .posterItem__left
+                        span.posterItem__title Aurora Concert Hall
+                        span.posterItem__info Пироговская наб., 5/2
+                        span.posterItem__time 18:30
+                    .posterItem__right
+                        a(href="#") АНОНС
+            .posterItem
+                .posterItem__Date
+                    span.posterItem__date 20
+                    span.posterItem__month НОЯБРЯ
+                .posterItem__main
+                    .posterItem__left
+                        span.posterItem__title The Hat
+                        span.posterItem__info Белинского, 9
+                        span.posterItem__time 20:30
+                    .posterItem__right
+                        a(href="#") АНОНС

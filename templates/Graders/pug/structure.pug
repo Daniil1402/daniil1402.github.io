@@ -1,0 +1,60 @@
+extends layout
+
+block content
+    header.header(style="background-image: url(./assets/img/aboutbg.png);")
+        .container
+            .headerTop.mb-300
+                .headerTop__logo
+                    a(href="index.html") GRADERS
+                .headerTop__nav
+                    nav#headerNav
+                        a(href="poster.html") АФИША
+                        a(href="blog.html") БЛОГ
+                        a(href="gallery-list.html") ФОТО
+                        a(href="video.html") ВИДЕО
+                        a(href="merch.html") МЕРЧ
+                        a(href="about.html") О НАС
+                    button(type="button" id="menu")
+                        img(src="assets/img/hamburger-menu.png", class="hamburger-menu", alt="menu")
+                        img(src="assets/img/close-menu.png", class="close-menu", alt="menu")
+                .headerTop__contacts
+                    .headerTop__social
+                        a(href="https://www.instagram.com/_graders_")
+                            img(src="assets/img/instagram.png", alt="instagram")
+                        a(href="https://vk.com/graders_band")
+                            img(src="assets/img/vk.png", alt="vkontakte")
+                        a(href="https://www.youtube.com/channel/UCoLkkYyPvv1I2k5fNXfnRfQ")
+                            img(src="assets/img/youtube.png", alt="youtube")
+                    button(type="button" id="button")
+                        img(src="assets/img/share.png", alt="")
+                        img(src="assets/img/angle.png", alt="" class="img__btn")
+            .headerMiddle.mb-600.color-white.ml-75
+                p(style="opacity: 100%;") СОСТАВ
+    .container
+        .structure
+            a(href="#").structureItem
+                .structureItem__img
+                    img(src="assets/img/str1.png", alt="")
+                span.structureItem__title ВИКТОР ФИРСОВ 
+                span.structureItem__text Гитара
+            a(href="#").structureItem
+                .structureItem__img
+                    img(src="assets/img/str2.png", alt="")
+                span.structureItem__title АРТЕМ ИЛЬЧЕНКО
+                span.structureItem__text Вокал
+            a(href="#").structureItem
+                .structureItem__img
+                    img(src="assets/img/str3.png", alt="")
+                span.structureItem__title РУСЛАН АСАФОВ
+                span.structureItem__text Ударные
+            a(href="#").structureItem
+                .structureItem__img
+                    img(src="assets/img/str4.png", alt="")
+                span.structureItem__title КАРИНА КУЗЬМИНА
+                span.structureItem__text Клавишные
+            a(href="#").structureItem
+                .structureItem__img
+                    img(src="assets/img/str5.png", alt="")
+                span.structureItem__title АЛЕКСАНДР ШЕРСТОБИТОВ 
+                span.structureItem__text Бас-гитара
+            

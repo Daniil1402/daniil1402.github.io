@@ -2,7 +2,6 @@ mixin header()
     header
         .headerTop
             nav.headerTop__nav
-                a(href="#") Home
                 a(href="#about") About me
                 a(href="#education") Education
                 a(href="#portfolio") Portfolio
@@ -18,8 +17,11 @@ mixin header()
                     <br>
                     23 years old, Saint-Petersburg 
                 .lang
-                    a(href="#").lang__link RU
+                    a(href="indexRu.html").lang__link RU
                     a(href="#") ENG
             .headerMain__bottom
-                img(src="assets/img/King.jpg", alt="")
+                picture
+                    source(srcset="assets/img/KingVmin.jpg", media = "(max-width: 400px)")
+                    source(srcset="assets/img/KingMin.jpg", media = "(max-width: 600px)")
+                    img(src="assets/img/King.jpg", alt="", id = "headerimg")
         

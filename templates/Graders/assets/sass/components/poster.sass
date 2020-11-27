@@ -1,0 +1,158 @@
+.poster
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 0 15px 0 15px
+    margin-top: -270px
+    .posterItem
+        max-width: 1250px
+        width: 100%
+        // min-height: 150px
+        background: #1E1E1E
+        border-radius: 30px
+        display: flex
+        justify-content: space-between
+        &:not(&:last-child)
+            margin-bottom: 70px
+        .posterItem__Date
+            min-width: 250px
+            width: 20%
+            min-height: 180px
+            background: #97CF78
+            border-radius: 30px 0 0 30px
+            clip-path: polygon(0 0, 0 180px, 170px 180px, 250px 0)
+            font-family: CINEMAXGotham-Italic
+            color: #111111
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding-top: 35px
+            span 
+                display: inline-block
+                margin-left: -40px
+            .posterItem__date
+                font-size: 45px
+            .posterItem__month
+                font-size: 30px
+        .posterItem__main
+            width: 80%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .posterItem__left
+                display: flex
+                flex-direction: column
+                justify-content: center
+                padding-left: 40px
+                .posterItem__title
+                    font-family: OpenSans-Semibold
+                    color: #97CF78
+                    font-size: 40px
+                    margin-bottom: 10px
+                .posterItem__info
+                    font-family: Glober-Light
+                    color: #FFFFFF
+                    font-size: 30px
+                .posterItem__time
+                    font-family: OpenSans-Semibold
+                    color:#FFFFFF
+                    font-size: 35px
+            .posterItem__right
+                padding-right: 60px
+                a
+                    font-family: CINEMAXGotham-Italic
+                    color: #FFFFFF
+                    font-size: 45px
+                    text-decoration: none
+                    transition: .3s
+                    &:hover
+                        color: #97CF78
+                        transition: .3s
+
+@media screen and (max-width: 950px)
+    .poster
+        .posterItem
+            .posterItem__main
+                .posterItem__left
+                    .posterItem__title
+                        font-size: 35px
+
+@media screen and (max-width: 900px)
+    .poster
+        .posterItem
+            .posterItem__main
+                .posterItem__left
+                    padding-left: 20px
+                .posterItem__right
+                    padding-right: 30px
+                    a
+                        font-size: 40px
+
+@media screen and (max-width: 850px)
+    .poster
+        .posterItem
+            flex-direction: column
+            padding-bottom: 20px
+            .posterItem__Date
+                width: 100%
+                min-height: 180px
+                border-radius: 30px 30px 0 0 
+                clip-path: none
+                padding-top: 0
+                min-height: 100px
+                justify-content: center
+                span
+                    margin: 0
+            .posterItem__main
+                width: 100%
+                .posterItem__left
+                    padding:
+                        left: 20px
+                        right: 10px
+
+@media screen and (max-width: 600px)
+    .poster
+        .posterItem
+            .posterItem__main
+                flex-direction: column
+                padding-top: 20px
+                .posterItem__left
+                    padding: 0
+                    align-items: center
+                    margin-bottom: 20px
+                .posterItem__right
+                    padding: 0
+
+@media screen and (max-width: 425px)
+    .poster
+        .posterItem
+            .posterItem__main
+                .posterItem__left
+                    .posterItem__title
+                        font-size: 35px
+                .posterItem__right
+                    padding: 0
+
+@media screen and (max-width: 400px)
+    .poster
+        .posterItem
+            .posterItem__main
+                .posterItem__left
+                    .posterItem__title
+                        font-size: 30px
+                    .posterItem__info
+                        font-size: 27px
+                    .posterItem__time
+                        font-size: 28px
+        
+@media screen and (max-width: 340px)
+    .poster
+        .posterItem
+            .posterItem__main
+                .posterItem__left
+                    .posterItem__title
+                        font-size: 28px
+                    .posterItem__info
+                        font-size: 26px
+                    .posterItem__time
+                        font-size: 27px

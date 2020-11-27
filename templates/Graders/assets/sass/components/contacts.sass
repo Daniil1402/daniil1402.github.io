@@ -1,0 +1,81 @@
+.contacts
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    margin-top: -270px
+    .contactsLeft, .contactsRight
+        max-width: 470px
+        width: 100%
+        .contacts__item
+            display: flex
+            align-items: center
+            &:not(:last-child)
+                margin-bottom: 100px
+            .contacts__img
+                width: 64px
+                margin-right: 50px
+                img 
+                    width: 100%
+            .contacts__link
+                display: flex
+                flex-direction: column
+                a
+                    text-decoration: none
+                    color: #ffffff
+                    font-family: "Glober-Light"
+                    font-size: 30px
+                    transition: .3s
+                    &:not(:last-child)
+                        margin-bottom: 15px
+                    &:hover
+                        filter: invert(50%)
+                        transition: .3s
+
+@media screen and (max-width: 950px)
+    .contacts
+        .contactsLeft
+            margin-bottom: 50px
+        .contactsLeft, .contactsRight
+            .contacts__item
+                &:not(:last-child)
+                    margin-bottom: 50px
+            
+@media screen and (max-width: 500px)
+    .contacts
+        .contactsLeft, .contactsRight
+            padding-left: 30px
+            .contacts__item
+                .contacts__img
+                    margin-right: 35px
+                    img 
+                        width: 80%
+                .contacts__link
+                    a
+                        font-size: 20px
+
+@media screen and (max-width: 375px)
+    .contacts
+        .contactsLeft, .contactsRight
+            .contacts__item
+                .contacts__img
+                    margin-right: 15px
+                    img 
+                        width: 70%
+
+@media screen and (max-width: 355px)
+    .contacts
+        .contactsLeft, .contactsRight
+            .contacts__item
+                .contacts__img
+                    margin-right: 0
+                    img 
+                        width: 60%
+                .contacts__link
+                    a
+                        font-size: 18px
+
+
+
+
+
+    

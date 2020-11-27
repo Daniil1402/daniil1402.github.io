@@ -1,0 +1,39 @@
+.footer
+    padding:
+        top: 50px
+        bottom: 70px
+    .footer__block
+        margin: 0 auto
+        max-width: 880px
+        width: 100%
+        hr 
+            border: 0
+            height: 4px
+            background: #97CF78
+        .copyright
+            color: #FFFFFF
+            font-family: Glober-Regular
+            font-size: 20px
+            margin-top: 50px
+            display: flex
+            justify-content: space-around
+            text-align: center
+            span 
+                display: inline-block
+
+@media screen and (max-width: 750px)
+    .footer
+        .footer__block
+            .copyright
+                flex-direction: column
+                justify-content: center
+                align-items: center
+
+@media screen and (max-width: 320px)
+    .footer
+        padding-bottom: 50px
+        .footer__block
+            .copyright
+                font-size: 17px
+
+        

@@ -1,0 +1,38 @@
+.assortment {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px; }
+
+.assortment__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 210px;
+  width: 100%;
+  padding: 25px 0;
+  border-radius: 10px 10px;
+  transition: background box-shadow .9s;
+  transition-duration: .9s; }
+  .assortment__item a {
+    text-decoration: none; }
+  .assortment__item:hover {
+    background: #443B32;
+    box-shadow: 0 0 5px 5px #443b32;
+    transition: background box-shadow .9s;
+    transition-duration: .9s;
+    transform: scale(1.1); }
+    .assortment__item:hover p {
+      color: #ffffff;
+      transition: color .9s; }
+
+.assortment__title {
+  margin-top: 30px; }
+  .assortment__title p {
+    font-family: "Qanelas-Medium";
+    font-size: 30px;
+    text-align: center;
+    color: #C19A78;
+    transition: color .9s; }

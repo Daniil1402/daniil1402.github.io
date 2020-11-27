@@ -1,0 +1,78 @@
+.structure
+    display: flex
+    justify-content: space-evenly
+    flex-wrap: wrap
+    margin-top: -270px
+    .structureItem
+        background: #1E1E1E
+        border-radius: 50px
+        max-width: 450px
+        width: 100%
+        min-height: 500px
+        text-decoration: none
+        display: block
+        margin-bottom: 80px
+        //margin-right: 70px
+        // &:not(:last-child)
+        //     margin-right: 70px
+        &:hover
+            .structureItem__img
+                img 
+                    border-bottom: 4px solid #97CF78
+                    filter: grayscale(0%)
+                    transition: 0.7s
+            span
+                color: #97CF78
+                transition: 0.7s
+        .structureItem__img
+            width: 100%
+            margin-bottom: 10px
+            img 
+                width: 100%
+                height: 100%
+                border-bottom: 4px solid #1e1e1e
+                filter: grayscale(100%)
+                transition: 0.7s
+        .structureItem__title 
+            display: block
+            font-family: CINEMAXGotham-Italic
+            color: #ffffff
+            font-size: 30px
+            padding-left: 30px
+            transition: 0.7s
+            margin-bottom: 10px
+        .structureItem__text
+            color: #ffffff
+            font-family: "Glober-Light"
+            font-size: 23px
+            padding-left: 30px
+            transition: 0.7s
+
+@media screen and (max-width: 768px)
+    .structure
+        .structureItem
+            .structureItem__img
+                img 
+                    filter: grayscale(0%)
+
+@media screen and (max-width: 425px)
+    .structure
+        padding: 0 20px 
+        .structureItem  
+            min-height: 440px
+
+@media screen and (max-width: 375px)
+    .structure
+        .structureItem  
+            min-height: 380px
+            .structureItem__title 
+                font-size: 23px
+                padding-left: 30px
+            .structureItem__text
+                font-size: 20px
+
+@media screen and (max-width: 320px)
+    .structure
+        .structureItem  
+            min-height: 335px
+            

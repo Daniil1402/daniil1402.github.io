@@ -1,0 +1,60 @@
+@import fonts
+@import libs
+@import vars
+
+*, *::before, *::after
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  background: #090909
+
+::-webkit-scrollbar
+  width: 10px
+  height: 3px
+  //-webkit-appearance: none
+::-webkit-scrollbar-button 
+  //background-color: #666
+  display: none
+::-webkit-scrollbar-track 
+  // background-color: #999
+  display: none
+::-webkit-scrollbar-track-piece
+  background-color: #999
+  display: none
+::-webkit-scrollbar-thumb
+  height: 50px
+  background-color: #97CF78
+  border-radius: 5px
+::-webkit-scrollbar-corner
+  background-color: #999
+::-webkit-resizer
+  background-color: #666
+
+.container
+  max-width: 1600px
+  width: 100%
+  margin: 0 auto
+
+a, button, form, textarea
+  &:active, &:focus
+    box-shadow: none
+    outline: none    
+
+@import components/header
+@import components/news-slider
+@import components/single
+@import components/lastVideo
+@import components/photo
+@import components/footer
+@import components/photosets
+@import components/gallery-list
+@import components/video
+@import components/blog
+@import components/article
+@import components/merch
+@import components/about
+@import components/contacts
+@import components/structure
+@import components/poster

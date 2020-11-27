@@ -1,0 +1,24 @@
+include header.pug
+include title.pug
+include assortment.pug
+include partner.pug
+include advantages.pug
+include coop.pug
+include footer.pug
+
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title ProffSyrup
+        link(rel="stylesheet", href="assets/css/style.css")
+    body
+        .container
+            +header()
+            +title()
+            +assortment()
+            +partner()
+            +advantages()
+            +coop()
+            +footer()

@@ -1,0 +1,106 @@
+extends layout
+
+block content
+    header.header(style="background-image: url(./assets/img/blogbg.png);")
+        .container
+            .headerTop.mb-300
+                .headerTop__logo
+                    a(href="index.html") GRADERS
+                .headerTop__nav
+                    nav#headerNav
+                        a(href="poster.html") АФИША
+                        a(href="blog.html") БЛОГ
+                        a(href="gallery-list.html") ФОТО
+                        a(href="video.html") ВИДЕО
+                        a(href="merch.html") МЕРЧ
+                        a(href="about.html") О НАС
+                    button(type="button" id="menu")
+                        img(src="assets/img/hamburger-menu.png", class="hamburger-menu", alt="menu")
+                        img(src="assets/img/close-menu.png", class="close-menu", alt="menu")
+                .headerTop__contacts
+                    .headerTop__social
+                        a(href="https://www.instagram.com/_graders_")
+                            img(src="assets/img/instagram.png", alt="instagram")
+                        a(href="https://vk.com/graders_band")
+                            img(src="assets/img/vk.png", alt="vkontakte")
+                        a(href="https://www.youtube.com/channel/UCoLkkYyPvv1I2k5fNXfnRfQ")
+                            img(src="assets/img/youtube.png", alt="youtube")
+                    button(type="button" id="button")
+                        img(src="assets/img/share.png", alt="")
+                        img(src="assets/img/angle.png", alt="" class="img__btn")
+            .headerMiddle.mb-400.color-white.ml-110
+                p(style="opacity: 100%;") БЛОГ
+    .container
+        .blog
+            .blog__left
+                .slide(style="margin-bottom: 30px;")
+                    .slide__img
+                        img(src="assets/img/slide1.png", alt="")
+                    .slide__block
+                        span.slide__blockTitle HARD ROCK CAFE #4
+                        p.slide__blockText Карантин закончился, и мы возвращаемся на сцену, чтобы радовать вас хорошей музыкой!
+                        a(href="article.html") ПОДРОБНЕЕ
+                .slide(style="margin-bottom: 30px;")
+                    .slide__img
+                        img(src="assets/img/slide2.png", alt="")
+                    .slide__block
+                        span.slide__blockTitle КУПИТЬ МЕРЧ
+                        p.slide__blockText Мы наконец-то запустили свою линейку мерча, поэтому теперь ты точно сможешь выделиться среди остальной толпы!
+                        a(href="#") КУПИТЬ
+                .slide(style="margin-bottom: 30px;")
+                    .slide__img
+                        img(src="assets/img/slide3.png", alt="")
+                    .slide__block
+                        span.slide__blockTitle ИНТЕРВЬЮ P.FM
+                        p.slide__blockText Недавно мы завалились на радио P. FM, где дали интересное и атмосферное интервью. Скорее переходи и слушай!
+                        a(href="#") СЛУШАТЬ
+                .slide(style="margin-bottom: 30px;")
+                    .slide__img
+                        img(src="assets/img/slide3.png", alt="")
+                    .slide__block
+                        span.slide__blockTitle ИНТЕРВЬЮ P.FM
+                        p.slide__blockText Недавно мы завалились на радио P. FM, где дали интересное и атмосферное интервью. Скорее переходи и слушай!
+                        a(href="#") СЛУШАТЬ
+                .slide
+                    .slide__img
+                        img(src="assets/img/slide3.png", alt="")
+                    .slide__block
+                        span.slide__blockTitle ИНТЕРВЬЮ P.FM
+                        p.slide__blockText Недавно мы завалились на радио P. FM, где дали интересное и атмосферное интервью. Скорее переходи и слушай!
+                        a(href="#") СЛУШАТЬ
+            .blog__right
+                .slide(style="margin-bottom: 30px;")
+                    .slide__img
+                        img(src="assets/img/slide1.png", alt="")
+                    .slide__block
+                        span.slide__blockTitle HARD ROCK CAFE #4
+                        p.slide__blockText Карантин закончился, и мы возвращаемся на сцену, чтобы радовать вас хорошей музыкой!
+                        a(href="#") ПОДРОБНЕЕ
+                .slide(style="margin-bottom: 30px;")
+                    .slide__img
+                        img(src="assets/img/slide2.png", alt="")
+                    .slide__block
+                        span.slide__blockTitle КУПИТЬ МЕРЧ
+                        p.slide__blockText Мы наконец-то запустили свою линейку мерча, поэтому теперь ты точно сможешь выделиться среди остальной толпы!
+                        a(href="#") КУПИТЬ
+                .slide(style="margin-bottom: 30px;")
+                    .slide__img
+                        img(src="assets/img/slide3.png", alt="")
+                    .slide__block
+                        span.slide__blockTitle ИНТЕРВЬЮ P.FM
+                        p.slide__blockText Недавно мы завалились на радио P. FM, где дали интересное и атмосферное интервью. Скорее переходи и слушай!
+                        a(href="#") СЛУШАТЬ
+                .slide(style="margin-bottom: 30px;")
+                    .slide__img
+                        img(src="assets/img/slide3.png", alt="")
+                    .slide__block
+                        span.slide__blockTitle ИНТЕРВЬЮ P.FM
+                        p.slide__blockText Недавно мы завалились на радио P. FM, где дали интересное и атмосферное интервью. Скорее переходи и слушай!
+                        a(href="#") СЛУШАТЬ
+                .slide
+                    .slide__img
+                        img(src="assets/img/slide3.png", alt="")
+                    .slide__block
+                        span.slide__blockTitle ИНТЕРВЬЮ P.FM
+                        p.slide__blockText Недавно мы завалились на радио P. FM, где дали интересное и атмосферное интервью. Скорее переходи и слушай!
+                        a(href="#") СЛУШАТЬ

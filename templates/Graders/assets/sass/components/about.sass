@@ -1,0 +1,103 @@
+.about
+    margin-top: -270px
+    .about__btn
+        display: flex
+        justify-content: center
+        align-items: center
+        //align-content: center
+        margin-bottom: 130px
+        a 
+            font-family: OpenSans-Semibold, sans-serif
+            color: #97CF78
+            text-decoration: none
+            font-size: 25px
+            border: 3px solid #97CF78
+            border-radius: 13px
+            padding: 5px 15px
+            transition: .5s
+            display: block
+            &:hover
+                background: #97CF78
+                color: #111111
+                box-shadow: 0 0 7px 1px #97CF78
+                transition: .5s
+            &:not(:last-child)
+                margin-right: 200px
+    .about__title
+        color: #ffffff
+        font-family: "Glober-Bold"
+        font-size: 53px
+        margin-bottom: 60px
+    .about__text
+        color: #ffffff
+        font-family: "Glober-Light"
+        font-size: 31px
+        &:not(:last-child)
+            margin-bottom: 35px
+    .about__img
+        max-width: 1360px
+        margin-bottom: 70px
+        img 
+            width: 100%
+        
+@media screen and (max-width: 1630px)
+    .about
+        padding-left: 40px
+
+@media screen and (max-width: 1024px)
+    .about
+        .about__btn
+            a 
+                &:not(:last-child)
+                    margin-right: 100px
+        .about__title
+            font-size: 45px
+        .about__text
+            font-size: 28px
+        .about__img
+            padding-right: 40px
+
+@media screen and (max-width: 425px)
+    .about
+        .about__btn
+            a 
+                font-size: 18px
+                &:not(:last-child)
+                    margin-right: 30px
+        .about__title
+            font-size: 35px
+        .about__text
+            font-size: 22px
+        .about__img
+            margin-bottom: 40px
+
+@media screen and (max-width: 375px)
+    .about
+        .about__btn
+            a 
+                font-size: 17px
+                &:not(:last-child)
+                    margin-right: 20px
+        .about__title
+            font-size: 30px
+            margin-bottom: 40px
+        .about__text
+            &:not(:last-child)
+                margin-bottom: 25px
+                
+@media screen and (max-width: 320px)
+    .about
+        .about__btn
+            a 
+                font-size: 13px
+                &:not(:last-child)
+                    margin-right: 15px
+        .about__title
+            font-size: 25px
+            margin-bottom: 30px
+        .about__text
+            font-size: 20px
+            &:not(:last-child)
+                margin-bottom: 20px
+        
+

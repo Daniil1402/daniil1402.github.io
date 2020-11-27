@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="assets/css/styles.css")
+    body
+        .container
+            header
+              .headerTop
+                  nav.headerTop__nav
+                      a(href="#about") Обо мне
+                      a(href="#education") Образование
+                      a(href="#portfolio") Портфолио
+                      a(href="#contacts") Контакты
+                  button(type="button" id="menu")
+                      img(src="assets/img/icon/menu.svg", class="hamburger-menu", alt="menu")
+                      img(src="assets/img/icon/close.svg", class="close-menu", alt="menu")
+              .headerMain
+                  .headerMain__top
+                      h1 Яковлев <br> Даниил
+                      p. 
+                          frontend разработчик
+                          <br>
+                          23 года, Санкт-Петербург
+                      .lang
+                          a(href="#").lang__link RU
+                          a(href="index.html") ENG
+                  .headerMain__bottom
+                      picture
+                          source(srcset="assets/img/KingVmin.jpg", media = "(max-width: 400px)")
+                          source(srcset="assets/img/KingMin.jpg", media = "(max-width: 600px)")
+                          img(src="assets/img/King.jpg", alt="", id = "headerimg")
+        .about#about
+          h2 Обо мне
+          p Здравствуйте, меня зовут Даниил, я frontend разработчик из Санкт-Петербурга. 
+          p Я работаю в этой области относительно недавно, но учусь достаточно быстро.
+          p Я готов реализовывать крутые проекты<br> с крутыми людьми.
+        .education#education
+          h2 Образование
+          .education__photo
+              img(src="assets/img/Polytech.png", alt="")
+          .education__text
+              p Летом 2020 года я получил степень магистра в области информационной безопасности в Санкт-Петербургском Политехническом университете имени Петра Великого.
+        .portfolio#portfolio
+          h2 Портфолио
+          .portfolioItem
+              a(href="#")
+                  img(src="assets/img/Graders.png", alt="")
+              a(href="#").portfolioItem__tittle 
+                  span Музыкальная группа - Graders
+          .portfolioItem
+              a(href="#")
+                  img(src="assets/img/Proffsyrup.png", alt="")
+              a(href="#").portfolioItem__tittle 
+                  span Магазин сиропов - Proffsyrup
+          .portfolioItem
+              a(href="#")
+                  img(src="assets/img/Philips.png", alt="")
+              a(href="#").portfolioItem__tittle 
+                  span Coffee machine service - Philips
+        footer#contacts
+          .footer__top
+              h2 Контакты
+              span Хотите узнать больше или просто поболтать?<br>Добро пожаловать!
+              a(href="#") Отправить сообщение
+          .footer__bottom
+              .social
+                  a(href="#")
+                      img(src="assets/img/icon/linkedin.svg", alt="")
+                  a(href="https://www.instagram.com/danchik1402/?igshid=1kw0hv4cshudj")
+                      img(src="assets/img/icon/instagram.svg", alt="")
+                  a(href="https://t.me/k1ng1402")
+                      img(src="assets/img/icon/telegram.svg", alt="")
+                  a(href="https://vk.com/id18781464")
+                      img(src="assets/img/icon/vk.svg", alt="")
+                  a(href="https://github.com/Daniil1402")
+                      img(src="assets/img/icon/github.svg", alt="")
+              span я в<br> LinkedIn, Instagram, Telegram, VK, GitHub
+
+    script(src="assets/js/scripts.js")

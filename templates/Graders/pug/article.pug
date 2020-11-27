@@ -1,0 +1,50 @@
+extends layout
+
+block content
+    header.header(style="background-image: url(./assets/img/articlebg.png);")
+        .container
+            .headerTop.mb-220
+                .headerTop__logo
+                    a(href="index.html") GRADERS
+                .headerTop__nav
+                    nav#headerNav
+                        a(href="poster.html") АФИША
+                        a(href="blog.html") БЛОГ
+                        a(href="gallery-list.html") ФОТО
+                        a(href="video.html") ВИДЕО
+                        a(href="merch.html") МЕРЧ
+                        a(href="about.html") О НАС
+                    button(type="button" id="menu")
+                        img(src="assets/img/hamburger-menu.png", class="hamburger-menu", alt="menu")
+                        img(src="assets/img/close-menu.png", class="close-menu", alt="menu")
+                .headerTop__contacts
+                    .headerTop__social
+                        a(href="https://www.instagram.com/_graders_")
+                            img(src="assets/img/instagram.png", alt="instagram")
+                        a(href="https://vk.com/graders_band")
+                            img(src="assets/img/vk.png", alt="vkontakte")
+                        a(href="https://www.youtube.com/channel/UCoLkkYyPvv1I2k5fNXfnRfQ")
+                            img(src="assets/img/youtube.png", alt="youtube")
+                    button(type="button" id="button")
+                        img(src="assets/img/share.png", alt="")
+                        img(src="assets/img/angle.png", alt="" class="img__btn")
+            .headerMiddle.mb-600.color-white.ml-10
+                p(style="opacity: 100%;") HARD ROCK <br> CAFE #4
+    .container
+        .article
+            p.article__tittle Карантин закончился, и мы возвращаемся на сцену,<br> чтобы радовать вас хорошей музыкой!
+            .article__img
+                img(src="assets/img/article1.png", alt="")
+            .article__info
+                p Будем в нашем уже любимом <span>Hard Rock Cafe</span>, и в этот раз все будет особенно зажигательно и незабываемо!
+                ul
+                    li - 21 февраля, 20:15
+                    li - ул. Садовая, 62 <span>(м. Садовая/Спасская/Сенная площадь)</span>
+                    li - Вход СВОБОДНЫЙ
+                p Чтобы иметь наилучший вид на Градеров, скорее бронируй столик по телефону: 
+                    a(href="tel:+78124559900") +7 (812) 455-99-00.
+            .article__btn
+                a(href="https://vk.com/graders_band") ОТКРЫТЬ В VK
+                a(href="https://www.instagram.com/_graders_/") ОТКРЫТЬ В INSTAGRAM
+            
+        

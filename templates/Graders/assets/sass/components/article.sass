@@ -1,0 +1,112 @@
+.article
+    margin-top: -270px
+    padding-bottom: 80px
+    .article__tittle
+        color: #ffffff
+        font-family: "Glober-Bold"
+        font-size: 60px
+        font-weight: 400
+        margin-bottom: 70px
+    .article__img
+        max-width: 1000px
+        width: 100%
+        margin-bottom: 60px
+        img 
+            width: 100%
+            height: 100%
+    .article__info
+        color: #ffffff
+        font-family: "Glober-Light"
+        font-size: 25px
+        margin-bottom: 70px
+        p 
+            span
+                font-family: "Glober-Bold"
+                font-weight: 700
+        ul 
+            margin: 40px 0
+            list-style: none
+            font-family: "Glober-Bold"
+            font-weight: 700
+            li 
+                margin-bottom: 20px
+            span 
+                font-family: "Glober-Light"
+                font-weight: 400
+        a 
+            font-family: "Glober-Bold"
+            font-weight: 700
+            text-decoration: none
+            color: #ffffff
+    .article__btn
+        display: flex
+        a 
+            font-family: OpenSans-Semibold, sans-serif
+            color: #97CF78
+            text-decoration: none
+            font-size: 25px
+            border: 3px solid #97CF78
+            border-radius: 13px
+            padding: 5px 15px
+            transition: .5s
+            &:hover
+                background: #97CF78
+                color: #111111
+                box-shadow: 0 0 7px 1px #97CF78
+                transition: .5s
+            &:not(:last-child)
+                margin-right: 50px
+
+@media screen and (max-width: 1440px)
+    .article
+        .article__tittle
+            font-size: 50px
+            padding: 0 30px
+        .article__img
+            padding: 0 30px
+        .article__info
+            padding: 0 30px
+        .article__btn
+            padding: 0 30px
+@media screen and (max-width: 1220px)
+    .article
+        .article__tittle
+            font-size: 40px
+
+@media screen and (max-width: 990px)
+    .article
+        .article__tittle
+            font-size: 30px
+
+@media screen and (max-width: 750px)
+    .article
+        padding-bottom: 0
+        .article__tittle
+            font-size: 20px
+        .article__btn
+            a 
+                font-size: 20px
+
+@media screen and (max-width: 425px)
+    .article
+        .article__info
+            font-size: 20px    
+        .article__btn
+            flex-wrap: wrap
+            a 
+                &:not(:last-child)
+                    margin-bottom: 20px  
+            
+@media screen and (max-width: 340px)
+    .article   
+        .article__btn
+            a 
+                font-size: 15px
+                
+
+        
+                        
+
+
+            
+        

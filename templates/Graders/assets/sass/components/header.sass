@@ -1,0 +1,250 @@
+.header
+    overflow: hidden
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    padding-top: 30px
+    min-height: 130vh
+    position: relative
+    .headerBg
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+        width: 100%
+        .img__small
+            display: none
+
+    
+.headerTop
+    font-family: CINEMAXGotham-Italic
+    color: #FFFFFF
+    display: flex
+    justify-content: space-between 
+    align-items: center
+    // margin-bottom: 65px
+    padding: 0 20px
+    .headerTop__logo
+        a
+            display: inline-block
+            text-decoration: none
+            color: #FFFFFF
+            font-size: 50px
+            transition: .7s
+            &:hover
+                filter: drop-shadow(16px 16px 20px #000000) opacity(50%)
+                transition: .7s
+
+    .headerTop__nav
+        display: flex
+        align-items: center       
+        nav
+            a 
+                color: #FFFFFF
+                text-decoration: none  
+                padding-bottom: 10px
+                font-size: 25px
+                letter-spacing: 1px
+                background-position: 100% 100%
+                background-repeat: no-repeat
+                background-size: 0% 5px
+                transition: background-size .5s
+                background-image: linear-gradient(#97CF78, #97CF78)
+                &:not(:last-child)
+                    margin-right: 70px
+                &:hover
+                    background-position: 0% 100%
+                    background-size: 100% 5px
+                    background-image: linear-gradient(#97CF78, #97CF78)
+        #menu 
+            padding: 0
+            border: none
+            font: inherit
+            color: inherit
+            background-color: transparent
+            cursor: pointer
+            //width: 40px
+            display: none
+            img 
+                filter: invert(0)
+                transition: .3s
+                &:hover
+                    filter: invert(50%)
+                    transition: .3s
+            .close-menu
+                display: none
+            
+    .headerTop__contacts
+        display: flex
+        position: relative
+        justify-content: flex-end
+        .headerTop__social
+            display: flex
+            align-items: center
+            list-style: none
+            margin: 0
+            padding: 0
+            transition: .3s
+            a 
+                display: inline-block
+                &:not(:last-child)
+                    margin-right: 20px
+                &:hover
+                    filter: invert(50%)  
+            &.active
+                max-height: 100%
+                opacity: 1
+                overflow: visible
+                //visibility: visible         
+
+#button 
+    padding: 0
+    border: none
+    font: inherit
+    color: inherit
+    background-color: transparent
+    cursor: pointer
+    max-width: 0
+    opacity: 0
+    overflow: hidden
+    display: flex
+    align-items: center
+    .img__btn
+        width: 20px
+        margin-left: 10px
+    &.active .img__btn
+        transform: rotate(-180deg)
+
+.headerMiddle
+    // margin-bottom: 730px
+    max-width: 100%
+    p
+        // color: #000000
+        opacity: 50%
+        font-size: 155px
+        // text-align: center
+        font-family: CINEMAXGotham-Italic
+        letter-spacing: 1px
+
+@media screen and (max-width: 1570px)
+    .headerTop
+        .headerTop__nav
+            nav
+                a
+                    &:not(:last-child)
+                        margin-right: 50px
+
+@media screen and (max-width: 1445px)
+    .headerTop__social
+        max-height: 0
+        opacity: 0
+        overflow: hidden
+        position: absolute
+        top: 50px
+        right: 30px  
+    // А кнопку отображаем
+    #button 
+        max-width: 100%
+        opacity: 1
+        overflow: visible   
+    .headerMiddle
+        p
+            font-size: 120px
+
+@media screen and (max-width: 1400px)
+    .headerTop
+        .headerTop__nav
+            nav
+                a
+                    &:not(:last-child)
+                        margin-right: 15px
+    .headerMiddle
+        p
+           font-size: 130px 
+
+@media screen and (max-width: 1200px)
+    .headerMiddle
+        p
+           font-size: 105px 
+
+@media screen and (max-width: 1024px)
+    .headerTop
+        .headerTop__logo
+            order: 2
+        .headerTop__nav
+            position: relative
+            order: 1
+            z-index: 100
+            nav
+                position: fixed
+                display: flex
+                top: 0
+                left: 0
+                z-index: 101
+                width: 100%
+                height: 100vh
+                max-height: 0
+                overflow: hidden
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                background: rgba(0, 0, 0, 0.3)
+                transition: 1s
+                &.active
+                    max-height: 100%
+                    background: rgba(0, 0, 0, 0.9)
+                    transition: 1s
+                a
+                    display: block
+                    &:not(:last-child)
+                        margin-right: 0
+                        margin-bottom: 10px
+            #menu
+                display: block    
+                z-index: 102
+                //position: fixed              
+                &.active
+                    .hamburger-menu 
+                       display: none 
+                    .close-menu
+                        display: inline-block 
+
+        .headerTop__contacts
+            order: 3  
+
+    .headerMiddle
+        p
+           font-size: 90px 
+
+@media screen and (max-width: 768px)
+    .headerMiddle
+        p
+           font-size: 60px 
+
+@media screen and (max-width: 425px)
+    .headerMiddle
+        margin-bottom: 500px
+        p
+           font-size: 50px 
+
+@media screen and (max-width: 400px)
+    .header
+        .headerBg
+            .img__big
+                display: none
+            .img__small
+                display: block
+                z-index: -1
+    .headerTop
+        .headerTop__logo
+            a
+                font-size: 30px
+        .headerTop__nav
+            #menu
+                img 
+                    width: 20px
+    .headerMiddle
+        p
+           font-size: 40px 
+             
+            
