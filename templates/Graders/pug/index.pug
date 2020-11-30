@@ -25,7 +25,7 @@
 extends layout
 
 block content
-    header.header
+    header.header(style="background-image: url(./assets/img/headerBgImg.png);")
         .container
             .headerTop.mb-65
                 .headerTop__logo
@@ -54,13 +54,8 @@ block content
                         img(src="assets/img/angle.png", alt="" class="img__btn")
             .headerMiddle.mb-730
                 p.text-center NEW ALBUM SOON!
-        .headerBg
-            img(src="./assets/img/headerBgImg.png", alt="", class = "img__big")
-            img(src="./assets/img/headerBgImg_small.png", alt="", class = "img__small")
-
-    .container            
-        div
-            include components/news-slider
+            div
+                include components/news-slider
 
     include components/single
     include components/lastVideo

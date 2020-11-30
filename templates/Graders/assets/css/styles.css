@@ -5393,16 +5393,7 @@ a:active, a:focus, button:active, button:focus, form:active, form:focus, textare
   background-position: center;
   background-size: cover;
   padding-top: 30px;
-  min-height: 130vh;
-  position: relative; }
-  .header .headerBg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%; }
-    .header .headerBg .img__small {
-      display: none; }
+  min-height: 130vh; }
 
 .headerTop {
   font-family: CINEMAXGotham-Italic;
@@ -5591,11 +5582,6 @@ a:active, a:focus, button:active, button:focus, form:active, form:focus, textare
       font-size: 50px; } }
 
 @media screen and (max-width: 400px) {
-  .header .headerBg .img__big {
-    display: none; }
-  .header .headerBg .img__small {
-    display: block;
-    z-index: -1; }
   .headerTop .headerTop__logo a {
     font-size: 30px; }
   .headerTop .headerTop__nav #menu img {
